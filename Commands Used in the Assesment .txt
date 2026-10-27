@@ -1,0 +1,26 @@
+COMMANDS FOR MYSQL COMMAND LINE CLIENT 
+--->
+CREATE DATABASE IF NOT EXISTS bank_db;
+USE bank_db;
+
+CREATE TABLE IF NOT EXISTS accounts (
+    account_number INT PRIMARY KEY,
+    holder_name VARCHAR(100) NOT NULL,
+    balance DECIMAL(15, 2) NOT NULL CHECK (balance >= 0)
+);
+
+INSERT INTO accounts (account_number, holder_name, balance) VALUES 
+(1, 'Jayant Kumar', 5000.00),
+(2, 'Om Rajput', 1200.00);
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+Commands for Terminal to compile the file 
+---->
+javac BankTransferApplication.java
+--------------------------------------------------------------------
+Command to connect the file and mySQL database using jar file 
+---->
+java --class-path ".;C:\Users\User\Downloads\mysql-connector-j-26.10.0\mysql-connector-j-26.10.0\mysql-connector-j-26.10.0.jar" BankTransferApplication.java
+--------------------------------------------------------------------
+
+
