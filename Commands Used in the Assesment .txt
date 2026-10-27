@@ -22,5 +22,5 @@ Command to connect the file and mySQL database using jar file
 ---->
 java --class-path ".;C:\Users\User\Downloads\mysql-connector-j-26.10.0\mysql-connector-j-26.10.0\mysql-connector-j-26.10.0.jar" BankTransferApplication.java
 --------------------------------------------------------------------
-
+Jar file has been unzipped and is being used as the connector file for mysql database with java in the above command line .
 
